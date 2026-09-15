@@ -1,181 +1,210 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>My Website</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio website - Geophysics, Hydrography & Geospatial Solutions">
+    <title>Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <header>
-
-        <nav class="navbar">
-
-            <div class="logo">
-                MY WEBSITE
+    <!-- =====================================================
+         HEADER (Uses logo.png)
+    ====================================================== -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="#home">
+                    <img src="logo.png" alt="Company Logo" class="logo">
+                </a>
             </div>
-
-            <ul class="nav-links">
-
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#about">About</a>
-                </li>
-
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
+            <nav class="navigation">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-
-    <!-- Home -->
-    <section id="home" class="hero">
-
-        <div class="hero-content">
-
-            <h1>
-                Welcome to My Website
-            </h1>
-
-            <p>
-                This is my first website.
-            </p>
-
-            <a href="#about" class="button">
-                Learn More
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- About -->
-    <section id="about" class="section">
-
-        <h2>About</h2>
-
-        <p>
-            This is a temporary section.
-            We will replace this content later.
-        </p>
-
-    </section>
-
-
-    <!-- Services -->
-    <section id="services" class="section">
-
-        <h2>Services</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Service 01</h3>
-                <p>
-                    Description of the service.
+    <main>
+        <!-- =================================================
+             HOME / HERO (Watermark uses logo1.png via CSS)
+        ================================================== -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-label">MARCELO PELLICANO FALLEIROS</p>
+                <h1>PELLISCAN</h1>
+                <p class="hero-description">
+                    Professional services in Data Analysis, Geophysics, Hydrography, GIS and Survey.
                 </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="button button-primary">View Projects</a>
+                    <a href="#contact" class="button button-secondary">Get in Touch</a>
+                </div>
             </div>
+        </section>
 
-            <div class="card">
-                <h3>Service 02</h3>
-                <p>
-                    Description of the service.
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <p class="section-label">ABOUT</p>
+                <h2>About Me</h2>
+
+                <div class="about-grid">
+                    <div class="about-profile">
+                        <img src="PROFILE.jpg" alt="Profile Picture" class="profile-image">
+                        <div class="about-text">
+                            <p>
+                                I hold a bachelor's degree in Geophysics and a master's degree in Oceanography, with over five years of experience in marine geophysics projects.
+
+                                During this time, I have contributed to a range of project types including hydrographic surveys, dredging operations, pipeline inspections, As-Built and As-Laid geophysical surveys and UXO investigations.
+
+                                I am proficient in using diverse software’s, quick learner, develop scripts (python) to increase the workflow strategies to effectively meet client objectives and technical requirements..
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-highlight">
+                        <div class="highlight-item">
+                            <strong>Experience</strong>
+                            <span>Oil and Gas and Renewables Industries for IRM - Inspection Repair and Maitenance services</span>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Expertise</strong>
+                            <span> Geophysics and Data Analysis</span>
+                        </div>
+                        <div class="highlight-item">
+                            <strong>Location</strong>
+                            <span>Brazil, United Kigdom, United States, Norway, Netherlands</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================
+             SERVICES
+        ================================================== -->
+        <section id="services" class="section section-light">
+            <div class="section-container">
+                <p class="section-label">EXPERTISE</p>
+                <h2>Services</h2>
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-number">01</div>
+                        <h3>Hydrography</h3>
+                        <p>Hydrographic survey, bathymetric data processing, and quality control.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-number">02</div>
+                        <h3>Geophysics</h3>
+                        <p>Geophysical survey, interpretation, and data processing.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-number">03</div>
+                        <h3>GIS & Mapping</h3>
+                        <p>GIS analysis, spatial data processing, and cartographic products.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-number">04</div>
+                        <h3>Data Processing</h3>
+                        <p>Automation, quality control, and processing workflows using modern tools.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================
+             PROJECTS
+        ================================================== -->
+        <section id="projects" class="section">
+            <div class="section-container">
+                <p class="section-label">PORTFOLIO</p>
+                <h2>Selected Projects</h2>
+                <div class="projects-grid">
+
+                    <article class="project">
+                        <div class="project-content">
+                            <span class="project-category">GEOPHYSICS</span>
+                            <h3>UXO Clearance & Removal</h3>
+                            <p>Identification and safe clearance of unexploded ordnance in marine environments.</p>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-content">
+                            <span class="project-category">INSPECTION</span>
+                            <h3>Pipeline Inspection</h3>
+                            <p>Detailed surveying and structural integrity assessment for underwater pipelines.</p>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-content">
+                            <span class="project-category">SURVEY</span>
+                            <h3>Cable Lay - Pre lay survey</h3>
+                            <p>Comprehensive seabed mapping prior to submarine cable installation operations.</p>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-content">
+                            <span class="project-category">AUTONOMOUS</span>
+                            <h3>Geophysical AUV</h3>
+                            <p>Deployment of Autonomous Underwater Vehicles for high-resolution geophysical data acquisition.</p>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-content">
+                            <span class="project-category">HYDROGRAPHY</span>
+                            <h3>Dredging Projects</h3>
+                            <p>Pre and post-dredge bathymetric surveys to calculate volume and ensure channel depth compliance.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+        <section id="contact" class="section contact-section section-light">
+            <div class="section-container">
+                <p class="section-label">CONTACT</p>
+                <h2>Work Together for a Better World</h2>
+                <p class="contact-description">
+                    If you would like to discuss a project, collaboration, or professional opportunity, feel free to get in touch.
                 </p>
+
+                <div class="contact-info-box">
+                    <p><strong>Phone:</strong> +55 61 999474967</p>
+                    <p><strong>Email:</strong> <a href="mailto:pelliscan21@gmail.com">pelliscan21@gmail.com</a></p>
+                </div>
+
+                <div class="contact-buttons">
+                    <a href="mailto:pelliscan21@gmail.com" class="button button-primary">Send an Email</a>
+                    <a href="https://wa.me/5561999474967" target="_blank" class="button button-secondary">WhatsApp</a>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <div class="card">
-                <h3>Service 03</h3>
-                <p>
-                    Description of the service.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-
-        <h2>Projects</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>Project 01</h3>
-                <p>
-                    Temporary project description.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Project 02</h3>
-                <p>
-                    Temporary project description.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Project 03</h3>
-                <p>
-                    Temporary project description.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-
-        <h2>Contact</h2>
-
-        <p>
-            Email: pellicano.geof@gmail.com
-        </p>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            � 2026 My PELLISCAN Website
-        </p>
-
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="footer">
+        <p>© 2026 Professional Portfolio. All rights reserved.</p>
     </footer>
 
 </body>
-
 </html>
